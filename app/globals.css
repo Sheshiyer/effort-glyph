@@ -144,3 +144,67 @@ body {
     transform: translateX(-50%) translateY(-10%);
   }
 }
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shine {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(
+    90deg,
+    #2962FF 0%,
+    #0091EA 25%,
+    #00E5FF 50%,
+    #0091EA 75%,
+    #2962FF 100%
+  );
+  background-size: 200% auto;
+  animation: gradientFlow 8s linear infinite;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(41, 98, 255, 0.5),
+               0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.backdrop-blur-effect {
+  @apply backdrop-blur-lg bg-black/10 border border-white/10;
+}
