@@ -59,7 +59,7 @@ export const TestimonialsSection = () => {
               className="bg-white/5 p-8 rounded-lg text-center"
             >
               <p className="text-white/80 text-lg mb-4">
-                "{testimonials[currentTestimonial].content}"
+                &quot;{testimonials[currentTestimonial].content}&quot;
               </p>
               <p className="text-white font-semibold">
                 {testimonials[currentTestimonial].name}
@@ -74,4 +74,3 @@ export const TestimonialsSection = () => {
     </section>
   )
 }
-

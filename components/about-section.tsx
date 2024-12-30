@@ -1,9 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid"
+import { BentoGridItem } from "../components/ui/bento-grid"
 import { Shield, Zap, BarChart, FileCheck, Users, Lock } from 'lucide-react'
-import { cn } from "../lib/utils"
 
 export const AboutSection = () => {
   const items = [

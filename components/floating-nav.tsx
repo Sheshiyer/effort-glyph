@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { cn } from "@/lib/utils"
 
 interface NavItem {
   name: string
@@ -63,4 +62,3 @@ export const FloatingNav = ({ navItems }: { navItems: NavItem[] }) => {
     </AnimatePresence>
   )
 }
-
